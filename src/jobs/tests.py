@@ -21,7 +21,7 @@ class JobTestCase(TestCase):
 
     def test_job_messages_creation(self) -> None:
         """
-        Тестирование моделей сообщений для блога.
+        Тестирование моделей работы.
 
         :return:
         """
