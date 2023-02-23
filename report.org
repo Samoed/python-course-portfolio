@@ -1,0 +1,15 @@
+#+title: Отчет
+
+* Что было сделано
+Тесты для работы
+** Модель описание работы
+[[file:docs/img/admin_job.png]]
+** Шаблон работ
+[[file:docs/img/jobs_index.png]]
+** Модель автора
+[[file:docs/img/admin_author.png]]
+** Отдельная работа
+[[file:docs/img/job_red.png]]
+[[file:docs/img/job_black.png]]
+** make all
+[[file:docs/img/make_all.png]]

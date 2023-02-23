@@ -19,7 +19,7 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
 
 from jobs.views import IndexJobsListView
 from portfolio import settings
@@ -28,6 +28,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path("", IndexJobsListView.as_view(), name="home"),
+    path("job/", include("jobs.urls")),
     path("blog/", include("blog.urls")),
+    path("author/", include("author.urls")),
 ]
 urlpatterns.extend(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))
